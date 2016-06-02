@@ -1,6 +1,17 @@
 const webpack = require("webpack");
 const path = require("path");
 
+const plugins = [
+    new webpack.ProvidePlugin({
+        "$": "jquery",
+        "jQuery": "jquery"
+    }),
+    new webpack.optimize.CommonsChunkPlugin({
+        name: "vendor",
+        filename: "./vendor/vendor.js"
+    })
+];
+
 module.exports = {
     entry: [
         "webpack/hot/dev-server",

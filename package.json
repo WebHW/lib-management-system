@@ -1,0 +1,32 @@
+{
+  "name": "lib-management-system",
+  "version": "1.0.0",
+  "description": "A Library Management System developed by React and Webpack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CompileYouth/lib-management-system.git"
+  },
+  "keywords": [
+    "lib",
+    "management",
+    "system",
+    "react",
+    "es6",
+    "webpack",
+    "gulp"
+  ],
+  "author": "CompileYouth <CompileYouth@163.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CompileYouth/lib-management-system/issues"
+  },
+  "homepage": "https://github.com/CompileYouth/lib-management-system#readme",
+  "devDependencies": {
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0"
+  }
+}

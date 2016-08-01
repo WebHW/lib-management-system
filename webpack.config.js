@@ -7,7 +7,7 @@ module.exports = {
     context: path.resolve("./src"),
     entry: {
         "vendor": [  ],
-        "mb": [ "./lms/app/ApplicationController.js", "./lms/resource/index.less" ]
+        "lms": [ "./lms/app/ApplicationController.js", "./lms/resource/index.less" ]
     },
     output: {
         path: path.resolve("./public/assets"),
@@ -41,5 +41,9 @@ module.exports = {
     },
     plugins: [
         new ExtractTextPlugin("./[name]/resource/index.css")
-    ]
+    ],
+
+    devServer: {
+        contentBase: "./public"
+    }
 };

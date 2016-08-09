@@ -6,13 +6,13 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
     context: path.resolve("./src"),
     entry: {
-        "vendor": [  ],
-        "lms": [ "./lms/app/ApplicationController.js", "./lms/resource/index.less" ]
+        "vendor": [ "react", "react-dom", "redux", "react-redux" ],
+        "index": [ "./index.js" ]
     },
     output: {
         path: path.resolve("./public/assets"),
         publicPath: "/assets/",
-        filename: "[name]/index.js"
+        filename: "[name].js"
     },
     module: {
         loaders: [
@@ -40,7 +40,7 @@ module.exports = {
         }
     },
     plugins: [
-        new ExtractTextPlugin("./[name]/resource/index.css")
+
     ],
 
     devServer: {
